@@ -90,7 +90,6 @@ client.on('message', async msg =>{
 	command = command.slice(prefix.length)
 
     if(command === `tag`) {
-    let embed = new Discord.RichEmbed()
     .setTitle("曞Ɠʀ⇝")
     msg.channel.send(embed);
     }
