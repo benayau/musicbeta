@@ -91,11 +91,7 @@ client.on('message', async msg =>{
 
     if(command === `tag`) {
     let embed = new Discord.RichEmbed()
-    .setColor(3447003)
     .setTitle("曞Ɠʀ⇝")
-    .setDescription(`${client.ping} ms,`)
-    .setFooter(`Requested by | ${msg.author.tag}`);
-    msg.delete().catch(O_o=>{})
     msg.channel.send(embed);
     }
 });
