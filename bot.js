@@ -315,7 +315,6 @@ function play(guild, song) {
 client.on('message', message => {
     if (message.content === 'help') {
         let helpEmbed = new Discord.RichEmbed()
-	```md
         .setTitle('**commands...**')
         .setDescription('**perfix(s)**')
         .addField('play', 'For play music🎼ة')
@@ -327,7 +326,6 @@ client.on('message', message => {
         .addField('queue', 'playlist')
         .addField('np', 'for show music u runnig  now')
         .setFooter('(general_commands) for show all commands')
-        ```
       message.channel.send(helpEmbed);
     }
 });
