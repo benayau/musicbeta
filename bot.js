@@ -319,7 +319,7 @@ function play(guild, song) {
 }
   
 client.on('message', message => {
-    if (message.content === 'shelp') {
+    if (message.content === 'help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**commands...**')
         .setDescription('**perfix(s)**')
