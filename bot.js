@@ -51,7 +51,14 @@ client.on('message', async msg =>{
     if (!msg.content.startsWith(prefix)) return undefined;
     
     let args = msg.content.split(' ');
+client.on('message', async msg =>{
+	if (msg.author.bot) return undefined;
+    if (!msg.content.startsWith(prefix)) return undefined;
+    
+    let args = msg.content.split(' ');
 
+	let command = msg.content.toLowerCase().split(" ")[0];
+	command = command.slice(prefix.length)
 	let command = msg.content.toLowerCase().split(" ")[0];
 	command = command.slice(prefix.length)
 
@@ -311,6 +318,14 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`**${song.title}**, is now playing!`);
 }
 
+client.on('message', async msg =>{
+	if (msg.author.bot) return undefined;
+    if (!msg.content.startsWith(prefix)) return undefined;
+    
+    let args = msg.content.split(' ');
+
+	let command = msg.content.toLowerCase().split(" ")[0];
+	command = command.slice(prefix.length)
 
 client.on('message', message => {
     if (message.content === 'help') {
