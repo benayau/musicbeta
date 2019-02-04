@@ -80,21 +80,6 @@ client.on('message', async msg =>{
 ////////////////////////
 //////////////////////
 
-client.on('message', async msg =>{
-	if (msg.author.bot) return undefined;
-    if (!msg.content.startsWith(prefix)) return undefined;
-    
-    let args = msg.content.split(' ');
-
-	let command = msg.content.toLowerCase().split(" ")[0];
-	command = command.slice(prefix.length)
-
-    if(command === `tag`) {
-    .setTitle("曞Ɠʀ⇝")
-    msg.channel.send(embed);
-    }
-});
-
 /////////////////////////
 ////////////////////////
 //////////////////////
